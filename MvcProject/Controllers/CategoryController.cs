@@ -19,8 +19,8 @@ namespace MvcProject.Controllers
         }
         public ActionResult GetCategoryList()
         {
-            var categoryValues = cm.GetAllBL();
-            return View(categoryValues);
+            //var categoryValues = cm.GetAllBL();
+            return View();
 
         }
 
@@ -33,7 +33,7 @@ namespace MvcProject.Controllers
         [HttpPost]
         public ActionResult AddCategory(Category p)
         {
-            cm.CategoryAddBL(p);
+           // cm.CategoryAddBL(p);
             return RedirectToAction("GetCategoryList");
         }
     }
