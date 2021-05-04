@@ -20,9 +20,18 @@ namespace BusinessLayer.Concrete
         }
 
         
+        public void CategoryAddBL(Category category)
+        {
+            _categoryDal.Insert(category);
+        }
+
         public List<Category> GetList()
         {
             return _categoryDal.List();
         }
+
+        
+
+       
     }
 }
