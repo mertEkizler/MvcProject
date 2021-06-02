@@ -13,6 +13,6 @@ namespace BusinessLayer.Abstract
         Content GetByID(int id);
         void ContentDelete(Content content);
         void ContentUpdate(Content content);
-        List<Content> GetListByID(int id);
+        List<Content> GetListByHeadingID(int id);
     }
 }
