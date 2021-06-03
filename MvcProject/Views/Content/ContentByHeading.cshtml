@@ -24,16 +24,16 @@
 
 
                                 <div class="time-label">
-                                    <span class="bg-success">Tarih</span>
+                                    <span class="bg-success">@(((DateTime)item.ContentDate).ToString("dd-MMM-yyyy"))</span>
                                 </div>
                                 <!-- /.timeline-label -->
                                 <!-- timeline item -->
                                 <div>
                                     <i class="fas fa-comment bg-yellow"></i>
                                     <div class="timeline-item">
-                                        <h3 class="timeline-header"><a href="#">Test</a> Deneme</h3>
+                                        <h3 class="timeline-header"><a href="#">@item.Writer.WriterName @item.Writer.WriterSurname</a></h3>
                                         <div class="timeline-body">
-                                            İçerik
+                                            @item.ContentValue
                                         </div>
                                     </div>
                                 </div>
@@ -51,3 +51,4 @@
     <!-- ./wrapper -->
 </body>
 </html>
+
