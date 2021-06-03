@@ -68,33 +68,9 @@
     <Compile Include="EntityFramework\EfContentDal.cs" />
     <Compile Include="EntityFramework\EfHeadingDal.cs" />
     <Compile Include="EntityFramework\EfWriterDal.cs" />
-    <Compile Include="Migrations\202104272328565_mig1.cs" />
-    <Compile Include="Migrations\202104272328565_mig1.designer.cs">
-      <DependentUpon>202104272328565_mig1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105161935135_mig_writer_edit.cs" />
-    <Compile Include="Migrations\202105161935135_mig_writer_edit.designer.cs">
-      <DependentUpon>202105161935135_mig_writer_edit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105191147529_mig_writertitle_add.cs" />
-    <Compile Include="Migrations\202105191147529_mig_writertitle_add.designer.cs">
-      <DependentUpon>202105191147529_mig_writertitle_add.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106011601322_mig_imagesizechange.cs" />
-    <Compile Include="Migrations\202106011601322_mig_imagesizechange.designer.cs">
-      <DependentUpon>202106011601322_mig_imagesizechange.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106011632018_mig_writer_addstatus.cs" />
-    <Compile Include="Migrations\202106011632018_mig_writer_addstatus.designer.cs">
-      <DependentUpon>202106011632018_mig_writer_addstatus.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106021026111_mig_contentstatusadd.cs" />
-    <Compile Include="Migrations\202106021026111_mig_contentstatusadd.designer.cs">
-      <DependentUpon>202106021026111_mig_contentstatusadd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106021032498_mig_headingstatusadd.cs" />
-    <Compile Include="Migrations\202106021032498_mig_headingstatusadd.designer.cs">
-      <DependentUpon>202106021032498_mig_headingstatusadd.cs</DependentUpon>
+    <Compile Include="Migrations\202106031748382_mig_addmessages.cs" />
+    <Compile Include="Migrations\202106031748382_mig_addmessages.designer.cs">
+      <DependentUpon>202106031748382_mig_addmessages.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,29 +86,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202104272328565_mig1.resx">
-      <DependentUpon>202104272328565_mig1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105161935135_mig_writer_edit.resx">
-      <DependentUpon>202105161935135_mig_writer_edit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105191147529_mig_writertitle_add.resx">
-      <DependentUpon>202105191147529_mig_writertitle_add.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106011601322_mig_imagesizechange.resx">
-      <DependentUpon>202106011601322_mig_imagesizechange.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106011632018_mig_writer_addstatus.resx">
-      <DependentUpon>202106011632018_mig_writer_addstatus.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106021026111_mig_contentstatusadd.resx">
-      <DependentUpon>202106021026111_mig_contentstatusadd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106021032498_mig_headingstatusadd.resx">
-      <DependentUpon>202106021032498_mig_headingstatusadd.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106031748382_mig_addmessages.resx">
+      <DependentUpon>202106031748382_mig_addmessages.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
