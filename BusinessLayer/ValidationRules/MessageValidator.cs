@@ -15,22 +15,9 @@ namespace BusinessLayer.ValidationRules
             RuleFor(x => x.ReceiverMail).NotEmpty().WithMessage("Alıcı adresini boş geçemezsiniz.");
             RuleFor(x => x.Subject).NotEmpty().WithMessage("Konu adını boş geçemezsiniz.");
             RuleFor(x => x.MessageContent).NotEmpty().WithMessage("Mesajı boş geçemezsiniz");
-            RuleFor(x => x.ReceiverMail).Must(IsRealMailAdress).WithMessage("Lütfen geçerli bir mail giriniz");
-            RuleFor(x => x.SenderMail).Must(IsRealMailAdress).WithMessage("Lütfen geçerli bir mail giriniz");
             RuleFor(x => x.Subject).MinimumLength(3).WithMessage("Lütfen 3 karakterden az değer girişi yapmayınız.");
             RuleFor(x => x.Subject).MaximumLength(100).WithMessage("Lütfen 50 karakterden fazla değer girişi yapmayınız.");
         }
 
-        private bool IsRealMailAdress(string mail)
-        {
-            if (mail.EndsWith("com"))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
     }
 }
